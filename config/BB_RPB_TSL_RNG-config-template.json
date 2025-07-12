@@ -121,7 +121,7 @@
         "jwt_secret_key": "${JWT_SECRET_KEY}",
         "CORS_origins": [
             "http://localhost:${WEB_PORT}",
-            "https://trading.ai.etelej.com"
+            "${WEB_BASE_URL}"
         ],
         "username": "${WEB_USERNAME}",
         "password": "${WEB_PASSWORD}"

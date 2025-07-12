@@ -172,7 +172,7 @@
     "listen_port": 8080,
     "verbosity": "error",
     "enable_openapi": false,
-    "jwt_secret_key": "556ebba5770ae3a07e80eda0f0f2b55df102896f8a5b86459c3433c1314345c4",
+    "jwt_secret_key": "your_jwt_secret_key_here",
     "CORS_origins": [],
     "username": "",
     "password": ""

@@ -42,6 +42,7 @@ required_vars=(
     "JWT_SECRET_KEY"
     "WEB_USERNAME"
     "WEB_PASSWORD"
+    "WEB_BASE_URL"
 )
 
 for var in "${required_vars[@]}"; do
