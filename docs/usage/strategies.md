@@ -1,3 +1,12 @@
+---
+title: Trading Strategies
+layout: default
+parent: Usage Guides
+nav_order: 3
+description: "Available trading strategies and configuration guide"
+permalink: /docs/usage/strategies/
+---
+
 # Trading Strategies
 
 This guide explains the available trading strategies, their characteristics, and how to configure them effectively.

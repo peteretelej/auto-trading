@@ -1,3 +1,12 @@
+---
+title: Caddy Reverse Proxy Setup
+layout: default
+parent: Setup Guides
+nav_order: 4
+description: "Set up Caddy reverse proxy for domain access"
+permalink: /docs/setup/caddy-proxy/
+---
+
 # Caddy Reverse Proxy Setup
 
 If you want to access your trading bots through a domain name instead of `localhost:8101`, you can set up Caddy as a reverse proxy.

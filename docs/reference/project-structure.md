@@ -1,3 +1,12 @@
+---
+title: Project Structure
+layout: default
+parent: Reference
+nav_order: 3
+description: "Project file organization and directory structure"
+permalink: /docs/reference/project-structure/
+---
+
 # Project Structure
 
 This reference explains the organization of files and directories in the auto-trading project.

@@ -1,3 +1,12 @@
+---
+title: Telegram Bot Setup
+layout: default
+parent: Setup Guides
+nav_order: 3
+description: "Set up Telegram notifications for trading bot monitoring"
+permalink: /docs/setup/telegram/
+---
+
 # Telegram Bot Setup
 
 Set up Telegram notifications to receive real-time updates about your trading bot's activity. This is optional but highly recommended for monitoring.
