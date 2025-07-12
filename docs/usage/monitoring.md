@@ -1,3 +1,12 @@
+---
+title: Monitoring and Analysis
+layout: default
+parent: Usage Guides
+nav_order: 2
+description: "Monitor trading bots and analyze performance"
+permalink: /docs/usage/monitoring/
+---
+
 # Monitoring and Analysis
 
 This guide covers how to monitor your trading bots, analyze performance, and maintain the system effectively.

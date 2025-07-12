@@ -1,3 +1,12 @@
+---
+title: Configuration Reference
+layout: default
+parent: Reference
+nav_order: 2
+description: "Detailed configuration parameters reference"
+permalink: /docs/reference/configuration/
+---
+
 # Configuration Reference
 
 This reference provides detailed explanations of all configuration parameters used in the auto-trading system.

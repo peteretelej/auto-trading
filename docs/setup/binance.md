@@ -1,3 +1,12 @@
+---
+title: Binance Setup
+layout: default
+parent: Setup Guides
+nav_order: 2
+description: "Configure Binance account for automated trading"
+permalink: /docs/setup/binance/
+---
+
 # Binance Setup
 
 This guide walks you through setting up your Binance account for automated trading.

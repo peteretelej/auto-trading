@@ -17,11 +17,7 @@ plugins:
 # Theme specific settings
 show_downloads: false
 
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:name/
+# No collections needed - using regular pages
 
 # Defaults
 defaults:
@@ -63,10 +59,9 @@ defaults:
       layout: "default"
       nav_order: 5
       parent: "Reference"
-  # Collections
+  # All other pages
   - scope:
       path: ""
-      type: "docs"
     values:
       layout: "default"
 

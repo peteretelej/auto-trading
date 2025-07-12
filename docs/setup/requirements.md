@@ -4,6 +4,7 @@ layout: default
 parent: Setup Guides
 nav_order: 1
 description: "System requirements and environment setup"
+permalink: /docs/setup/requirements/
 ---
 
 # Requirements Setup

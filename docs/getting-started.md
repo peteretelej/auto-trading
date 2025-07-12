@@ -3,6 +3,7 @@ title: Getting Started
 layout: default
 nav_order: 1
 description: "Complete setup guide for the cryptocurrency trading bot"
+permalink: /docs/getting-started/
 ---
 
 # Getting Started

@@ -4,6 +4,7 @@ layout: default
 parent: Reference
 nav_order: 1
 description: "Diagnose and resolve common issues"
+permalink: /docs/reference/troubleshooting/
 ---
 
 # Troubleshooting Guide

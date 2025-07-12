@@ -3,6 +3,7 @@ title: Trading Concepts
 layout: default
 nav_order: 2
 description: "Core concepts behind automated cryptocurrency trading"
+permalink: /docs/concepts/
 ---
 
 # Trading Concepts

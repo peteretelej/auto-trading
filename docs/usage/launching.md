@@ -4,6 +4,7 @@ layout: default
 parent: Usage Guides
 nav_order: 1
 description: "How to start and manage trading strategies"
+permalink: /docs/usage/launching/
 ---
 
 # Launching Strategies
