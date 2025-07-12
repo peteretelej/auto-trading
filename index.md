@@ -53,7 +53,6 @@ New to automated trading? Follow this educational sequence:
 
 - **[GitHub Repository](https://github.com/peteretelej/auto-trading)** - Source code and releases
 - **[FreqTrade Documentation](https://www.freqtrade.io/en/stable/)** - Official trading framework docs
-- **[Original Project Goals](docs/about-project/)** - Context and objectives
 
 ## Getting Started
 
