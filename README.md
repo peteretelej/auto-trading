@@ -1,6 +1,10 @@
 # Automated Crypto Trading Bot
 
+⚠️ **ARCHIVED PROJECT** - No longer maintained or supported.
+
 Multi-strategy cryptocurrency trading bot using Freqtrade with Binance integration.
+
+**Important**: This project is shared for educational purposes only. Cryptocurrency trading carries significant risk. Use at your own risk.
 
 ## Quick Start
 
@@ -75,4 +79,15 @@ The image is built automatically when launching bots for the first time.
 - [Freqtrade Docs](https://www.freqtrade.io/en/stable/)
 - [Project Documentation](docs/)
 
-⚠️ **Warning**: Cryptocurrency trading carries significant risk. Only trade with funds you can afford to lose.
+## Documentation
+
+Complete documentation is available at: **[peteretelej.github.io/auto-trading](https://peteretelej.github.io/auto-trading)**
+
+## Important Disclaimers
+
+⚠️ **ARCHIVED**: This project is no longer maintained or supported  
+⚠️ **RISK**: Cryptocurrency trading carries significant financial risk  
+⚠️ **NO GUARANTEES**: Past performance does not guarantee future results  
+⚠️ **EDUCATIONAL**: This code is shared for educational and reference purposes only
+
+**Only trade with funds you can afford to lose.**

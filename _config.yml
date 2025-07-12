@@ -1,0 +1,55 @@
+title: Auto-Trading Bot
+description: Multi-strategy cryptocurrency trading bot using FreqTrade with Docker
+url: "https://peteretelej.github.io"
+baseurl: "/auto-trading"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - README.md
+  - docs/setup-guide.md
+  - docs/project-reference-guide.md
+  - docs/about-project.md
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude files
+exclude:
+  - .env.sample
+  - .gitignore
+  - Dockerfile
+  - docker-launch.sh
+  - scripts/
+  - config/
+  - user_data/
+  - ta-lib/
+  - ta-lib-0.4.0-src.tar.gz
+  - requirements.txt
+  - debug.log
+  - debug2.log
