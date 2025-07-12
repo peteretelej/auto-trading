@@ -1,0 +1,108 @@
+# Freqtrade Trading Bot Configuration
+# Add this to your existing Caddyfile
+
+# Option 1: As a subdomain of ai.etelej.com via wildcard
+
+# Wildcard for ai.etelej.com subdomains
+*.ai.etelej.com {
+	import cloudflare_tls
+
+	  # Main trading bot instance
+    @trading host trading.ai.etelej.com
+    handle @trading {
+        import ip_whitelist
+        reverse_proxy localhost:8101 {
+            transport http {
+                read_timeout 2m
+                write_timeout 2m
+                dial_timeout 10s
+            }
+        }
+    }
+    
+    # Explicitly define each additional bot instance
+    @trading-8102 host trading-8102.ai.etelej.com
+    handle @trading-8102 {
+        import ip_whitelist
+        reverse_proxy localhost:8102 {
+            transport http {
+                read_timeout 2m
+                write_timeout 2m
+                dial_timeout 10s
+            }
+        }
+    }
+    
+    @trading-8103 host trading-8103.ai.etelej.com
+    handle @trading-8103 {
+        import ip_whitelist
+        reverse_proxy localhost:8103 {
+            transport http {
+                read_timeout 2m
+                write_timeout 2m
+                dial_timeout 10s
+            }
+        }
+    }
+    
+    @trading-8104 host trading-8104.ai.etelej.com
+    handle @trading-8104 {
+        import ip_whitelist
+        reverse_proxy localhost:8104 {
+            transport http {
+                read_timeout 2m
+                write_timeout 2m
+                dial_timeout 10s
+            }
+        }
+    }
+    
+    @trading-8105 host trading-8105.ai.etelej.com
+    handle @trading-8105 {
+        import ip_whitelist
+        reverse_proxy localhost:8105 {
+            transport http {
+                read_timeout 2m
+                write_timeout 2m
+                dial_timeout 10s
+            }
+        }
+    }
+    
+    # Fallback for unhandled ai subdomains
+    handle {
+        respond 404 {
+            body "Domain not configured"
+        }
+    }
+}
+
+# Option 2: As a standalone domain (if you prefer)
+# trading.etelej.com {
+#     import cloudflare_tls
+#     import ip_whitelist
+#     reverse_proxy localhost:8101 {
+#         header_up Host {host}
+#         transport http {
+#             read_timeout 2m
+#             write_timeout 2m
+#             dial_timeout 10s
+#         }
+#     }
+# }
+
+# Option 3: As a subdomain of mysukari.com
+# trading.mysukari.com {
+#     import cloudflare_tls
+#     reverse_proxy localhost:8101 {
+#         header_up Host {host}
+#         transport http {
+#             read_timeout 2m
+#             write_timeout 2m
+#             dial_timeout 10s
+#         }
+#     }
+# }
+
+# Note: We're using port 8101 for the Freqtrade API instead of the default 8080.
+# Make sure this matches the WEB_PORT in your .env file and PORT in docker-launch.sh.

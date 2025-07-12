@@ -1,0 +1,201 @@
+{
+    "max_open_trades": 6,
+    "stake_currency": "USDT",
+    "stake_amount": 50,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "stoploss": -0.08,
+    "trailing_stop": false,
+    "trailing_stop_positive": 0.005,
+    "trailing_stop_positive_offset": 0.01,
+    "trailing_only_offset_is_reached": true,
+    "minimal_roi": {
+        "0": 0.03,
+        "10": 0.02,
+        "30": 0.01,
+        "60": 0
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "${BINANCE_API_KEY}",
+        "secret": "${BINANCE_API_SECRET}",
+        "ccxt_config": {
+            "urls": {
+                "api": {
+                    "public": "http://binance-proxy:8090/api/v3"
+                }
+            }
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 500,
+            "timeout": 30000,
+            "verbose": false,
+            "reconnect": true,
+            "keepAlive": true,
+            "urls": {
+                "api": {
+                    "public": "http://binance-proxy:8090/api/v3"
+                }
+            }
+        },
+        "pair_whitelist": [
+            "BTC/USDT",
+            "ETH/USDT",
+            "ADA/USDT",
+            "SOL/USDT",
+            "BNB/USDT",
+            "XRP/USDT",
+            "MATIC/USDT",
+            "DOT/USDT",
+            "LINK/USDT",
+            "AVAX/USDT",
+            "LUNA/USDT",
+            "NEAR/USDT",
+            "DOGE/USDT",
+            "UNI/USDT",
+            "ATOM/USDT",
+            "LTC/USDT",
+            "FTM/USDT",
+            "ALGO/USDT",
+            "MANA/USDT",
+            "SAND/USDT",
+            "AAVE/USDT",
+            "AXS/USDT",
+            "GALA/USDT",
+            "THETA/USDT",
+            "CRO/USDT",
+            "FTT/USDT",
+            "EGLD/USDT",
+            "HBAR/USDT",
+            "EOS/USDT",
+            "CAKE/USDT",
+            "KSM/USDT",
+            "ENJ/USDT",
+            "WAVES/USDT",
+            "CHZ/USDT",
+            "HOT/USDT",
+            "AR/USDT",
+            "BAT/USDT",
+            "ZIL/USDT",
+            "ONE/USDT",
+            "CELO/USDT"
+        ],
+        "pair_blacklist": [
+            "BNB/BTC",
+            "BNB/ETH",
+            ".*UP/USDT",
+            ".*DOWN/USDT",
+            ".*BEAR/USDT",
+            ".*BULL/USDT"
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        },
+        {
+            "method": "VolumePairList",
+            "number_assets": 60,
+            "sort_key": "quoteVolume",
+            "min_value": 1000000,
+            "refresh_period": 1800
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 7
+        },
+        {
+            "method": "PrecisionFilter"
+        },
+        {
+            "method": "PriceFilter",
+            "low_price_ratio": 0.01
+        },
+        {
+            "method": "SpreadFilter",
+            "max_spread_ratio": 0.01
+        }
+    ],
+    "order_types": {
+        "entry": "limit",
+        "exit": "market",
+        "emergency_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": true,
+        "stoploss_on_exchange_interval": 30
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "${TELEGRAM_BOT_TOKEN}",
+        "chat_id": "${TELEGRAM_CHAT_ID}",
+        "notification_settings": {
+            "status": "on",
+            "warning": "on",
+            "startup": "on",
+            "entry": "on",
+            "exit": "on",
+            "entry_fill": "on",
+            "exit_fill": "on",
+            "entry_cancel": "on",
+            "exit_cancel": "on"
+        }
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": "${WEB_PORT}",
+        "verbosity": "error",
+        "enable_openapi": true,
+        "jwt_secret_key": "${JWT_SECRET_KEY}",
+        "CORS_origins": [
+            "http://localhost:${WEB_PORT}",
+            "https://trading.ai.etelej.com",
+            "https://trading-${WEB_PORT}.ai.etelej.com"
+        ],
+        "username": "${WEB_USERNAME}",
+        "password": "${WEB_PASSWORD}"
+    },
+    "bot_name": "NFI-freqtrade",
+    "strategy": "NFI",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 3
+    },
+    "strategy_custom_params": {
+        "nfi_automatic_rebuys_enable": true,
+        "position_adjustment_enable": true,
+        "buy_protection_params": {
+            "1": {
+                "btc_1h_not_downtrend": false,
+                "safe_dips_threshold_2": 0.08
+            },
+            "2": {
+                "safe_pump_6h_threshold": 0.6,
+                "sma200_1h_rising": false
+            },
+            "3": {
+                "safe_dips_threshold_2": 0.08
+            }
+        }
+    }
+}
