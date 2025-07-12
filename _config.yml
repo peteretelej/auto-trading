@@ -16,9 +16,10 @@ plugins:
 # Navigation
 header_pages:
   - README.md
-  - docs/setup-guide.md
-  - docs/project-reference-guide.md
-  - docs/about-project.md
+  - docs/getting-started.md
+  - docs/concepts.md
+  - docs/setup/requirements.md
+  - docs/usage/launching.md
 
 # Collections
 collections:
@@ -53,3 +54,4 @@ exclude:
   - requirements.txt
   - debug.log
   - debug2.log
+  - docs/legacy/
