@@ -6,20 +6,16 @@ baseurl: "/auto-trading"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+remote_theme: pages-themes/leap-day@v0.2.0
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
-# Navigation
-header_pages:
-  - README.md
-  - docs/getting-started.md
-  - docs/concepts.md
-  - docs/setup/requirements.md
-  - docs/usage/launching.md
+# Theme specific settings
+show_downloads: false
 
 # Collections
 collections:
@@ -29,16 +25,50 @@ collections:
 
 # Defaults
 defaults:
+  # Main pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  # Getting started and concept guides
+  - scope:
+      path: "docs/getting-started.md"
+    values:
+      layout: "default"
+      nav_order: 1
+  - scope:
+      path: "docs/concepts.md"
+    values:
+      layout: "default"
+      nav_order: 2
+  # Setup guides
+  - scope:
+      path: "docs/setup"
+    values:
+      layout: "default"
+      nav_order: 3
+      parent: "Setup Guides"
+  # Usage guides  
+  - scope:
+      path: "docs/usage"
+    values:
+      layout: "default"
+      nav_order: 4
+      parent: "Usage Guides"
+  # Reference documentation
+  - scope:
+      path: "docs/reference"
+    values:
+      layout: "default"
+      nav_order: 5
+      parent: "Reference"
+  # Collections
   - scope:
       path: ""
       type: "docs"
     values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      layout: "default"
 
 # Exclude files
 exclude:

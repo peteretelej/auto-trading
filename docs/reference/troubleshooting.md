@@ -1,3 +1,11 @@
+---
+title: Troubleshooting Guide
+layout: default
+parent: Reference
+nav_order: 1
+description: "Diagnose and resolve common issues"
+---
+
 # Troubleshooting Guide
 
 This guide helps you diagnose and resolve common issues with the auto-trading system.

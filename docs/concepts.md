@@ -1,3 +1,10 @@
+---
+title: Trading Concepts
+layout: default
+nav_order: 2
+description: "Core concepts behind automated cryptocurrency trading"
+---
+
 # Trading Concepts
 
 This guide explains the core concepts behind automated cryptocurrency trading to help you understand how the system works.

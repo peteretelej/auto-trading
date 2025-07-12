@@ -1,3 +1,11 @@
+---
+title: Requirements Setup
+layout: default
+parent: Setup Guides
+nav_order: 1
+description: "System requirements and environment setup"
+---
+
 # Requirements Setup
 
 This guide covers the technical prerequisites and initial environment setup for the auto-trading system.

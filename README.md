@@ -6,7 +6,7 @@ Multi-strategy cryptocurrency trading bot using Freqtrade with Binance integrati
 
 This project provides infrastructure and guidance for running multiple FreqTrade strategies simultaneously. It includes Docker deployment configuration, rate-limiting proxy setup, monitoring scripts, strategy-specific configuration templates, and complete setup documentation. The infrastructure work for multi-strategy automated trading is already done.
 
-**Note**: This project was [open sourced with Claude Code assistance](https://github.com/peteretelej/auto-trading/commit/1d439e9fb4e7914e815337dce262b17a1305e948) for educational sharing purposes.
+**Note**: This project was [open sourced with Claude Code assistance](https://peteretelej.github.io/auto-trading/) for educational sharing purposes.
 
 **Important**: This project is shared for educational purposes only. Cryptocurrency trading carries significant risk. Use at your own risk.
 

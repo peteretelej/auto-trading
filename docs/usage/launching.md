@@ -1,3 +1,11 @@
+---
+title: Launching Strategies
+layout: default
+parent: Usage Guides
+nav_order: 1
+description: "How to start and manage trading strategies"
+---
+
 # Launching Strategies
 
 This guide covers how to start and manage trading strategies with the auto-trading system.

@@ -1,3 +1,10 @@
+---
+title: Getting Started
+layout: default
+nav_order: 1
+description: "Complete setup guide for the cryptocurrency trading bot"
+---
+
 # Getting Started
 
 This guide helps you understand and set up the auto-trading system. Follow these steps in order for the best experience.

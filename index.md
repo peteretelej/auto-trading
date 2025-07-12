@@ -1,17 +1,15 @@
 ---
-layout: home
+layout: default
 title: Auto-Trading Bot
 ---
 
-# Archived Cryptocurrency Trading Bot
+# Cryptocurrency Trading Bot
 
-⚠️ **ARCHIVED PROJECT** - This repository is no longer maintained or supported.
-
-This project was an experimental multi-strategy cryptocurrency trading setup built with FreqTrade and Docker. It provides infrastructure and guidance for running multiple trading strategies simultaneously, including Docker deployment configuration, rate-limiting proxy setup, monitoring scripts, strategy-specific configuration templates, and complete setup documentation. The infrastructure work for multi-strategy automated trading is already done.
+This project was an experimental multi-strategy cryptocurrency trading setup built with FreqTrade and Docker. It provides infrastructure and guidance for running multiple trading strategies simultaneously, including Docker deployment configuration, rate-limiting proxy setup, monitoring scripts, strategy-specific configuration templates, and complete setup documentation.
 
 ## ⚠️ Important Disclaimers
 
-- **No Support**: This project is archived and will not receive updates or support
+- **⚠️ ARCHIVED PROJECT**: This repository is no longer maintained or supported
 - **Use at Your Own Risk**: Cryptocurrency trading carries significant financial risk
 - **No Guarantees**: Past performance does not guarantee future results
 - **Educational Purpose**: This code is shared for educational and reference purposes only
